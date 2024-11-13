@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Documentation for devs
 
-## Getting Started
+On this document you'll find the most important tokens that can be used to match the provided design.
 
-First, run the development server:
+## General
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Font family used: Raleway (https://fonts.google.com/specimen/Raleway)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Font sizes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- "MORE FROM"
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  - mobile: `size 17px` / `weight 900`
+  - desktop: `size 31px` / `weight 900`
 
-## Learn More
+- "ROUNDED" accent
 
-To learn more about Next.js, take a look at the following resources:
+  - mobile: `size 12px` / `weight 800`
+  - desktop: `size 14px` / `weight 800`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- "MAIN" title
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  - mobile: `size 49px` / `weight 900`
+  - desktop: `size 35px` / `weight 900`
 
-## Deploy on Vercel
+- "PARAGRAPH"
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - mobile: `size 14px` / `weight 500`
+  - desktop: `size 16px` / `weight 500`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- "CTA"
+  - mobile: `size 14px` / `weight 900`
+  - desktop: `size 16px` / `weight 900`
+
+## Colors
+
+- Body: `#09101A`
+- CTA:
+  - Background: `#fff`
+  - Color: `#fff`
+
+## Gradients
+
+The desktop background has two gradients: one from left to right and one from top to bottom. On mobile, the "background" image blends into the actual background color.
+
+### Desktop gradient: Left to Right
+
+- `rgba(37, 45, 55, 0) 40%`
+- `#000000 72.92%`
+- `#09101A 100%`
+
+### Desktop gradient: Top to Bottom
+
+- `rgba(0, 0, 0, 0) 75%`
+- `#000000 100%`
+
+## Foreground Image
+
+Some slides have optional "foreground" images provided. On the first slide, there is a dog cutout image which is the foreground image; this is layered over the given background image.
+When a slide is active and has a foreground image, the foreground is pinned to the bottom of the component.
+
+It will not exceed the below bounds of the background container. It will "overflow" above the background image container by 90px on desktop and 70px on mobile.
+
+The foreground takes up 50% of the available banner width on desktop and 40% on mobile.
