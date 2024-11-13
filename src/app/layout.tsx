@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("bg-white")}>
-      <body className={cn("pt-24 md:pt-28 pb-32")}>{children}</body>
+      <body className={cn("pt-24 pad:pt-28 pad:pb-32")}>{children}</body>
     </html>
   );
 }
