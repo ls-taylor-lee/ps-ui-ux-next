@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* globals.css or any other global CSS file */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
+@layer base {
+  :root {
+    --background: #09101a;
+    --foreground: #ffffff;
+
+    --cta-background: #ffffff;
+    --cta-foreground: #09101a;
+  }
+}
+
+@layer base {
+  body {
+    @apply font-raleway;
+  }
+
+  .main-content {
+    @apply bg-background text-foreground;
+  }
+}

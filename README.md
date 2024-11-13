@@ -20,8 +20,8 @@ Font family used: Raleway (https://fonts.google.com/specimen/Raleway)
 
 - "MAIN" title
 
-  - mobile: `size 49px` / `weight 900`
-  - desktop: `size 35px` / `weight 900`
+  - mobile: `size 35px` / `weight 900`
+  - desktop: `size 49px` / `weight 900`
 
 - "PARAGRAPH"
 
